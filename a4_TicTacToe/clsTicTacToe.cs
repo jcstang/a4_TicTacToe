@@ -29,22 +29,24 @@ namespace a4_TicTacToe
         public bool IsWinningMove()
         {
             eWinningMove = WinningMove.Row2;
+
+            return false;
         }
         private bool IsDiagonalWin()
         {
-
+            return false;
         }
         private bool IsVertWin()
         {
-
+            return false;
         }
         private bool IsHorzWin()
         {
-
+            return true;
         }
         public bool IsTie()
         {
-
+            return false;
         }
 
     }

@@ -1,0 +1,10 @@
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\obj\Debug\a4_TicTacToe.csprojAssemblyReference.cache
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\obj\Debug\a4_TicTacToe.Form1.resources
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\obj\Debug\a4_TicTacToe.Properties.Resources.resources
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\obj\Debug\a4_TicTacToe.csproj.GenerateResource.cache
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\obj\Debug\a4_TicTacToe.csproj.CoreCompileInputs.cache
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\bin\Debug\a4_TicTacToe.exe.config
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\bin\Debug\a4_TicTacToe.exe
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\bin\Debug\a4_TicTacToe.pdb
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\obj\Debug\a4_TicTacToe.exe
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a4_tictactoe\a4_TicTacToe\obj\Debug\a4_TicTacToe.pdb
