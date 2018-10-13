@@ -60,6 +60,18 @@ namespace a4_TicTacToe
 
         private void ClearLabels()
         {
+            //change the text of the labels
+            lblTopLeft.Text = "";
+            lblTopMid.Text = "";
+            lblTopRight.Text = "";
+
+            lblMidLeft.Text = "";
+            lblMidMid.Text = "";
+            lblMidRight.Text = "";
+
+            lblBotLeft.Text = "";
+            lblBotMid.Text = "";
+            lblBotRight.Text = "";
 
         }
         private void ResetColors()
