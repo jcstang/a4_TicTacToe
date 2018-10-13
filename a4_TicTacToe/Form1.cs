@@ -54,7 +54,6 @@ namespace a4_TicTacToe
         #endregion
 
 
-        //TODO: Create ClearLabels() and a ResetColors()
         //TODO: LoadBoard()
         //TODO: SetBackgroundColor(Label lblLabel)
 
@@ -76,15 +75,31 @@ namespace a4_TicTacToe
         }
         private void ResetColors()
         {
+            Color resetColor = Color.White;
+
+            SetBackgroundColor(lblTopLeft, resetColor);
+            SetBackgroundColor(lblTopMid, resetColor);
+            SetBackgroundColor(lblTopRight, resetColor);
+
+            SetBackgroundColor(lblMidLeft, resetColor);
+            SetBackgroundColor(lblMidMid, resetColor);
+            SetBackgroundColor(lblMidRight, resetColor);
+
+            SetBackgroundColor(lblBotLeft, resetColor);
+            SetBackgroundColor(lblBotMid, resetColor);
+            SetBackgroundColor(lblBotRight, resetColor);
+
 
         }
         private void LoadBoard()
         {
 
         }
-        private void SetBackgroundColor(Label lblLabel)
+        private void SetBackgroundColor(Label lblLabel, Color changeToColor)
         {
             //lblLabel.BackColor = Color.Yellow;
+            lblLabel.BackColor = changeToColor;
+
         }
 
     }
