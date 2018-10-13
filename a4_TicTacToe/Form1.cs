@@ -15,14 +15,33 @@ namespace a4_TicTacToe
         clsTicTacToe clsTicTac;
         bool bIsGameStarted;
         string[,] saBoard;
+        List<Label> lListOfLabels;
 
         public Form1()
         {
             InitializeComponent();
+            LoadLabels();
             saBoard = new string[3, 3];
             clsTicTac = new clsTicTacToe(saBoard);
             clsTicTac.saBoard = saBoard;
             bIsGameStarted = false;
+        }
+
+        private void LoadLabels()
+        {
+            lListOfLabels = new List<Label>();
+            lListOfLabels.Add(lblTopLeft);
+            lListOfLabels.Add(lblTopMid);
+            lListOfLabels.Add(lblTopRight);
+
+            lListOfLabels.Add(lblMidLeft);
+            lListOfLabels.Add(lblMidMid);
+            lListOfLabels.Add(lblMidRight);
+
+            lListOfLabels.Add(lblBotLeft);
+            lListOfLabels.Add(lblBotMid);
+            lListOfLabels.Add(lblBotRight);
+
         }
 
         #region button clicks
@@ -36,8 +55,8 @@ namespace a4_TicTacToe
 
         private void Space_Click(object sender, EventArgs e)
         {
-            //1. bIsGameStarted
-            //2. is space blank
+            //1. bIsGameStarted - done
+            //2. is space blank - done
             //3. LoadBoard()
             //4. clsTicTac.IsWinningMove()
             //5. HighlightWinningMove() and DisplayScores()
@@ -114,13 +133,13 @@ namespace a4_TicTacToe
         }
         private void LoadBoard()
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < clsTicTac.saBoard.Length; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < clsTicTac.saBoard.Length; j++)
                 {
-                    Console.Write( clsTicTac.saBoard[i, j] + " ");
+                    clsTicTac.saBoard[i,j]
+                     
                 }
-                Console.WriteLine();
             }
         }
         private void SetBackgroundColor(Label lblLabel, Color changeToColor)

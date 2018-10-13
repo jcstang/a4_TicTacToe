@@ -33,7 +33,7 @@ namespace a4_TicTacToe
             eWhoseTurn = Player.player1;
         }
 
-        private enum Player
+        public enum Player
         {
             player1,
             player2
@@ -48,6 +48,12 @@ namespace a4_TicTacToe
             Col3,
             Diag1,
             Diag2
+        }
+
+        public Player GetPlayerTurn()
+        {
+            //eWhoseTurn.ToString();
+            return eWhoseTurn;
         }
 
         public bool IsWinningMove()
