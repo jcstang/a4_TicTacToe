@@ -43,6 +43,19 @@ namespace a4_TicTacToe
             //5. HighlightWinningMove() and DisplayScores()
             //6. clsTicTac.IsTie()
             //7. DisplayScores() [game over]
+            Label myLabel = (Label)sender;
+
+            if (bIsGameStarted && myLabel.Text == "")
+            {
+                LoadBoard();
+                //if IsWinningMove
+                HighlightWinningMove();
+
+                //if IsTie()
+                // handle tie?
+
+                DisplayScores();
+            }
 
             //** example program **
             //cast the sender to label
@@ -51,12 +64,19 @@ namespace a4_TicTacToe
             //setBackgroundColor(myLabel);
         }
 
+
         #endregion
 
 
         //TODO: LoadBoard()
-        //TODO: SetBackgroundColor(Label lblLabel)
-
+        private void DisplayScores()
+        {
+            throw new NotImplementedException();
+        }
+        private void HighlightWinningMove()
+        {
+            throw new NotImplementedException();
+        }
         private void ClearLabels()
         {
             //change the text of the labels
