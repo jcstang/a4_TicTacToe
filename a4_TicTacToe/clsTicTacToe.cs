@@ -13,7 +13,22 @@ namespace a4_TicTacToe
         private int iPlayer2Wins;
         private int iTies;
         private WinningMove eWinningMove;
+        private Player eWhoseTurn;
 
+        public clsTicTacToe()
+        {
+            saBoard = new string[3, 3];
+            iPlayer1Wins = 0;
+            iPlayer2Wins = 0;
+            iTies = 0;
+            eWhoseTurn = Player.player1;
+        }
+
+        private enum Player
+        {
+            player1,
+            player2
+        }
         private enum WinningMove
         {
             Row1,
