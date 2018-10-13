@@ -29,7 +29,9 @@ namespace a4_TicTacToe
         private void start_Click(object sender, EventArgs e)
         {
             //Need to start the game or set bIsGameStarted variable
-            //clearLabels() and ResetColors()
+            bIsGameStarted = true;
+            ClearLabels();
+            ResetColors();
         }
 
         private void Space_Click(object sender, EventArgs e)
