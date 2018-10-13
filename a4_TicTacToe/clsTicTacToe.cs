@@ -24,6 +24,15 @@ namespace a4_TicTacToe
             eWhoseTurn = Player.player1;
         }
 
+        public clsTicTacToe(string[,] saGameBoard)
+        {
+            saBoard = saGameBoard;
+            iPlayer1Wins = 0;
+            iPlayer2Wins = 0;
+            iTies = 0;
+            eWhoseTurn = Player.player1;
+        }
+
         private enum Player
         {
             player1,
