@@ -25,6 +25,7 @@ namespace a4_TicTacToe
             bIsGameStarted = false;
         }
 
+        #region button clicks
         private void start_Click(object sender, EventArgs e)
         {
             //Need to start the game or set bIsGameStarted variable
@@ -41,20 +42,36 @@ namespace a4_TicTacToe
             //6. clsTicTac.IsTie()
             //7. DisplayScores() [game over]
 
-            //example program
+            //** example program **
             //cast the sender to label
             //label myLabel = (Label)sender;
             //mylabel.text = "x";
             //setBackgroundColor(myLabel);
         }
-        
 
+        #endregion
 
 
         //TODO: Create ClearLabels() and a ResetColors()
         //TODO: LoadBoard()
         //TODO: SetBackgroundColor(Label lblLabel)
-        //lblLabel.BackColor = Color.Yellow;
+
+        private void ClearLabels()
+        {
+
+        }
+        private void ResetColors()
+        {
+
+        }
+        private void LoadBoard()
+        {
+
+        }
+        private void SetBackgroundColor(Label lblLabel)
+        {
+            //lblLabel.BackColor = Color.Yellow;
+        }
 
     }
 }
