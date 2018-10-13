@@ -31,27 +31,32 @@ namespace a4_TicTacToe
             //clearLabels() and ResetColors()
         }
 
+        private void Space_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //TODO: space clicked
-            //1. bIsGameStarted
-            //2. is space blank
-            //3. LoadBoard()
-            //4. clsTicTac.IsWinningMove()
-            //5. HighlightWinningMove() and DisplayScores()
-            //6. clsTicTac.IsTie()
-            //7. DisplayScores() [game over]
+        //1. bIsGameStarted
+        //2. is space blank
+        //3. LoadBoard()
+        //4. clsTicTac.IsWinningMove()
+        //5. HighlightWinningMove() and DisplayScores()
+        //6. clsTicTac.IsTie()
+        //7. DisplayScores() [game over]
 
 
         //TODO: lblSpace_Click(object sender, EventArgs e)
-            //cast the sender to label
-            //label myLabel = (Label)sender;
-            //mylabel.text = "x";
-            //setBackgroundColor(myLabel);
+        //cast the sender to label
+        //label myLabel = (Label)sender;
+        //mylabel.text = "x";
+        //setBackgroundColor(myLabel);
 
 
         //TODO: Create ClearLabels() and a ResetColors()
         //TODO: LoadBoard()
         //TODO: SetBackgroundColor(Label lblLabel)
-            //lblLabel.BackColor = Color.Yellow;
+        //lblLabel.BackColor = Color.Yellow;
 
     }
 }
