@@ -19,7 +19,14 @@ namespace a4_TicTacToe
         public Form1()
         {
             InitializeComponent();
-
+            saBoard = new string[3, 3];
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    saBoard[i, j] = "Y";
+                }
+            }
             clsTicTac = new clsTicTacToe();
             clsTicTac.saBoard = saBoard;
             bIsGameStarted = false;
@@ -48,6 +55,7 @@ namespace a4_TicTacToe
             if (bIsGameStarted && myLabel.Text == " ")
             {
                 LoadBoard();
+                //TODO: change the player and the text
                 //if IsWinningMove
                 HighlightWinningMove();
 
@@ -113,7 +121,14 @@ namespace a4_TicTacToe
         }
         private void LoadBoard()
         {
-
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write( clsTicTac.saBoard[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
         }
         private void SetBackgroundColor(Label lblLabel, Color changeToColor)
         {
