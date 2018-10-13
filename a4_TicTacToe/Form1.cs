@@ -45,7 +45,7 @@ namespace a4_TicTacToe
             //7. DisplayScores() [game over]
             Label myLabel = (Label)sender;
 
-            if (bIsGameStarted && myLabel.Text == "")
+            if (bIsGameStarted && myLabel.Text == " ")
             {
                 LoadBoard();
                 //if IsWinningMove
@@ -71,26 +71,26 @@ namespace a4_TicTacToe
         //TODO: LoadBoard()
         private void DisplayScores()
         {
-            throw new NotImplementedException();
+            //DisplayScores on the board
         }
         private void HighlightWinningMove()
         {
-            throw new NotImplementedException();
+            //set color of the winning move color`
         }
         private void ClearLabels()
         {
             //change the text of the labels
-            lblTopLeft.Text = "";
-            lblTopMid.Text = "";
-            lblTopRight.Text = "";
+            lblTopLeft.Text = " ";
+            lblTopMid.Text = " ";
+            lblTopRight.Text = " ";
 
-            lblMidLeft.Text = "";
-            lblMidMid.Text = "";
-            lblMidRight.Text = "";
+            lblMidLeft.Text = " ";
+            lblMidMid.Text = " ";
+            lblMidRight.Text = " ";
 
-            lblBotLeft.Text = "";
-            lblBotMid.Text = "";
-            lblBotRight.Text = "";
+            lblBotLeft.Text = " ";
+            lblBotMid.Text = " ";
+            lblBotRight.Text = " ";
 
         }
         private void ResetColors()
