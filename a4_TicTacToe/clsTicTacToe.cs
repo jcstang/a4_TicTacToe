@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace a4_TicTacToe
 {
     /// <summary>
-    /// TicTacToe Class - Houses the business logic
+    /// TicTacToe Class - Houses the business logic for the project.
     /// </summary>
     class clsTicTacToe
     {
