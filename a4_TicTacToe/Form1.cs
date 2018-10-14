@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace a4_TicTacToe
 {
+    /// <summary>
+    /// Tic Tac Toe Game
+    /// </summary>
     public partial class Form1 : Form
     {
         clsTicTacToe clsTicTac;
@@ -17,6 +20,9 @@ namespace a4_TicTacToe
         string[,] saBoard;
         List<Label> lListOfLabels;
 
+        /// <summary>
+        /// init of the form
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +32,9 @@ namespace a4_TicTacToe
             clsTicTac.saBoard = saBoard;
             bIsGameStarted = false;
         }
-
+        /// <summary>
+        /// Load the labels of the tic tac toe board into a List of labels.
+        /// </summary>
         private void LoadLabels()
         {
             lListOfLabels = new List<Label>();
@@ -45,6 +53,11 @@ namespace a4_TicTacToe
         }
 
         #region button clicks
+        /// <summary>
+        /// Start button clicked - starting the game.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void start_Click(object sender, EventArgs e)
         {
             //Need to start the game or set bIsGameStarted variable
@@ -52,7 +65,11 @@ namespace a4_TicTacToe
             ClearLabels();
             ResetColors();
         }
-
+        /// <summary>
+        /// Space of the gameboard that is clicked. the 9 squares.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Space_Click(object sender, EventArgs e)
         {
             //1. bIsGameStarted - done
@@ -113,7 +130,6 @@ namespace a4_TicTacToe
                     default:
                         break;
                 }
-                //TODO: change the player and the text
                 //if IsWinningMove
                 HighlightWinningMove();
 
@@ -124,14 +140,8 @@ namespace a4_TicTacToe
                 ChangePlayer();
             }
 
-            //** example program **
-            //cast the sender to label
-            //label myLabel = (Label)sender;
-            //mylabel.text = "x";
-            //setBackgroundColor(myLabel);
+
         }
-
-
 
 
         #endregion
@@ -139,19 +149,30 @@ namespace a4_TicTacToe
 
         #region Helper Methods
 
-
+        /// <summary>
+        /// Start the process of changing the player
+        /// </summary>
         private void ChangePlayer()
         {
             clsTicTac.ChangePlayer();
         }
+        /// <summary>
+        /// Display the scores on the right and bottom.
+        /// </summary>
         private void DisplayScores()
         {
             //DisplayScores on the board
         }
+        /// <summary>
+        /// Highlight winning move
+        /// </summary>
         private void HighlightWinningMove()
         {
             //set color of the winning move color`
         }
+        /// <summary>
+        /// Clear the board of the X and O.
+        /// </summary>
         private void ClearLabels()
         {
             //change the text of the labels
@@ -168,6 +189,9 @@ namespace a4_TicTacToe
             lblBotRight.Text = " ";
 
         }
+        /// <summary>
+        /// Reset all of the colors to white
+        /// </summary>
         private void ResetColors()
         {
             Color resetColor = Color.White;
@@ -186,6 +210,9 @@ namespace a4_TicTacToe
 
 
         }
+        /// <summary>
+        /// Load the values of the board
+        /// </summary>
         private void LoadBoard()
         {
             foreach (var item in lListOfLabels)
@@ -201,6 +228,11 @@ namespace a4_TicTacToe
             }
             
         }
+        /// <summary>
+        /// Helper method for setting the color of the squares. 
+        /// </summary>
+        /// <param name="lblLabel"></param>
+        /// <param name="changeToColor"></param>
         private void SetBackgroundColor(Label lblLabel, Color changeToColor)
         {
             //lblLabel.BackColor = Color.Yellow;

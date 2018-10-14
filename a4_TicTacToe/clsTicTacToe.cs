@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace a4_TicTacToe
 {
+    /// <summary>
+    /// TicTacToe Class - Houses the business logic
+    /// </summary>
     class clsTicTacToe
     {
         public string[,] saBoard;
@@ -15,6 +18,9 @@ namespace a4_TicTacToe
         private WinningMove eWinningMove;
         public Player eWhoseTurn;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public clsTicTacToe()
         {
             saBoard = new string[3, 3];
@@ -23,7 +29,10 @@ namespace a4_TicTacToe
             iTies = 0;
             eWhoseTurn = Player.player1;
         }
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="saGameBoard">passing a gameboard in</param>
         public clsTicTacToe(string[,] saGameBoard)
         {
             saBoard = saGameBoard;
@@ -33,11 +42,17 @@ namespace a4_TicTacToe
             eWhoseTurn = Player.player1;
         }
 
+        /// <summary>
+        /// Enum to keep track of player1 v player2
+        /// </summary>
         public enum Player
         {
             player1,
             player2
         }
+        /// <summary>
+        /// Enum that deals with row,col, and diag verbage. 
+        /// </summary>
         private enum WinningMove
         {
             Row1,
@@ -50,6 +65,9 @@ namespace a4_TicTacToe
             Diag2
         }
 
+        /// <summary>
+        /// Changes the player 
+        /// </summary>
         public void ChangePlayer()
         {
             if (eWhoseTurn == Player.player1)
@@ -62,30 +80,45 @@ namespace a4_TicTacToe
             }
         }
 
-        public Player GetPlayerTurn()
-        {
-            //eWhoseTurn.ToString();
-            return eWhoseTurn;
-        }
 
+        /// <summary>
+        /// is that the winning move
+        /// </summary>
+        /// <returns></returns>
         public bool IsWinningMove()
         {
             eWinningMove = WinningMove.Row2;
 
             return false;
         }
+        /// <summary>
+        /// Is this a diagonal win?
+        /// </summary>
+        /// <returns>bool</returns>
         private bool IsDiagonalWin()
         {
             return false;
         }
+        /// <summary>
+        /// Is this a vertical win?
+        /// </summary>
+        /// <returns>bool</returns>
         private bool IsVertWin()
         {
             return false;
         }
+        /// <summary>
+        /// Is this a horizontal win?
+        /// </summary>
+        /// <returns>bool</returns>
         private bool IsHorzWin()
         {
             return true;
         }
+        /// <summary>
+        /// did the game result in a tie?
+        /// </summary>
+        /// <returns>bool</returns>
         public bool IsTie()
         {
             return false;
