@@ -15,7 +15,7 @@ namespace a4_TicTacToe
     /// </summary>
     public partial class Form1 : Form
     {
-        clsTicTacToe clsTicTac;
+        clsTicTacToe clsTicTac; //using tictactoe class
         bool bIsGameStarted;
         string[,] saBoard;
         List<Label> lListOfLabels;
