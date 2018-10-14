@@ -19,7 +19,7 @@ namespace a4_TicTacToe
         public Player eWhoseTurn;
 
         /// <summary>
-        /// Constructor
+        /// Constructor for tictactoe class.
         /// </summary>
         public clsTicTacToe()
         {
