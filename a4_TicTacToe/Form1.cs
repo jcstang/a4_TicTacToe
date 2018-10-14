@@ -121,6 +121,7 @@ namespace a4_TicTacToe
                 // handle tie?
 
                 DisplayScores();
+                ChangePlayer();
             }
 
             //** example program **
@@ -131,10 +132,18 @@ namespace a4_TicTacToe
         }
 
 
+
+
         #endregion
 
 
         #region Helper Methods
+
+
+        private void ChangePlayer()
+        {
+            clsTicTac.ChangePlayer();
+        }
         private void DisplayScores()
         {
             //DisplayScores on the board

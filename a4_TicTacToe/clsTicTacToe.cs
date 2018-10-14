@@ -50,6 +50,18 @@ namespace a4_TicTacToe
             Diag2
         }
 
+        public void ChangePlayer()
+        {
+            if (eWhoseTurn == Player.player1)
+            {
+                eWhoseTurn = Player.player2;
+
+            } else if(eWhoseTurn == Player.player2)
+            {
+                eWhoseTurn = Player.player1;
+            }
+        }
+
         public Player GetPlayerTurn()
         {
             //eWhoseTurn.ToString();
