@@ -66,7 +66,53 @@ namespace a4_TicTacToe
 
             if (bIsGameStarted && myLabel.Text == " ")
             {
-                LoadBoard();
+                Console.WriteLine(myLabel.Text);
+                Console.WriteLine(myLabel.Tag);
+
+                string sMark = "";
+                if (clsTicTac.eWhoseTurn == clsTicTacToe.Player.player1)
+                {
+                    sMark = "X";
+                } else
+                {
+                    sMark = "O";
+                }
+                //LoadBoard(); //broken for some reason
+
+                Int32.TryParse(myLabel.Tag.ToString(), out int myTag);
+
+                switch (myTag)
+                {
+                    case 00:
+                        lblTopLeft.Text = sMark;
+                        break;
+                    case 01:
+                        lblTopMid.Text = sMark;
+                        break;
+                    case 02:
+                        lblTopRight.Text = sMark;
+                        break;
+                    case 10:
+                        lblMidLeft.Text = sMark;
+                        break;
+                    case 11:
+                        lblMidMid.Text = sMark;
+                        break;
+                    case 12:
+                        lblMidRight.Text = sMark;
+                        break;
+                    case 20:
+                        lblBotLeft.Text = sMark;
+                        break;
+                    case 21:
+                        lblBotMid.Text = sMark;
+                        break;
+                    case 22:
+                        lblBotRight.Text = sMark;
+                        break;
+                    default:
+                        break;
+                }
                 //TODO: change the player and the text
                 //if IsWinningMove
                 HighlightWinningMove();
@@ -88,7 +134,7 @@ namespace a4_TicTacToe
         #endregion
 
 
-        //TODO: LoadBoard()
+        #region Helper Methods
         private void DisplayScores()
         {
             //DisplayScores on the board
@@ -133,14 +179,18 @@ namespace a4_TicTacToe
         }
         private void LoadBoard()
         {
-            for (int i = 0; i < clsTicTac.saBoard.Length; i++)
+            foreach (var item in lListOfLabels)
             {
-                for (int j = 0; j < clsTicTac.saBoard.Length; j++)
+                for (int i = 0; i < 3; i++)
                 {
-                    clsTicTac.saBoard[i,j]
-                     
+                    for (int j = 0; j < 3; j++)
+                    {
+                        item.Text = clsTicTac.saBoard[i, j];
+
+                    }
                 }
             }
+            
         }
         private void SetBackgroundColor(Label lblLabel, Color changeToColor)
         {
@@ -148,6 +198,8 @@ namespace a4_TicTacToe
             lblLabel.BackColor = changeToColor;
 
         }
+
+        #endregion
 
     }
 }

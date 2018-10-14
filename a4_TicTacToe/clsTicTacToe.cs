@@ -13,7 +13,7 @@ namespace a4_TicTacToe
         private int iPlayer2Wins;
         private int iTies;
         private WinningMove eWinningMove;
-        private Player eWhoseTurn;
+        public Player eWhoseTurn;
 
         public clsTicTacToe()
         {
